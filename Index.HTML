@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Mery Chissuane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #eee;
+            background: url('c:/Users/DELL/Downloads/your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 2px solid #00ff99; /* Neon verde */
+        }
+        .log {
+            margin: 0;
+            font-size: 2.5em;
+            color: #00ff99; /* Neon verde */
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.7);
+        }
+        .log span {
+            color: #00ff99; /* Neon verde */
+        }
+        nav.navigation {
+            margin: 15px 0;
+        }
+        nav.navigation a {
+            color: #eee;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s;
+        }
+        nav.navigation a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #00ff99; /* Neon verde */
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        nav.navigation a:hover::after {
+            width: 100%;
+        }
+        .btn-talk {
+            display: inline-block;
+            background: linear-gradient(135deg, #00ff99, #00cc99);
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-talk:hover {
+            background: linear-gradient(135deg, #00cc99, #009966);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .home {
+            text-align: center;
+            padding: 50px 20px;
+            color: #eee;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .home img {
+            margin-top: 20px;
+            width: 170px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00ff99; /* Neon verde */
+            box-shadow: 0 4px 8px rgba(0, 255, 153, 0.5);
+        }
+        .home h2 {
+            margin: 10px 0;
+            font-size: 2em;
+            color: #00ff99; /* Neon verde */
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.7);
+        }
+        .home h4 {
+            margin: 5px 0;
+            color: #00cc99; /* Verde claro */
+        }
+        .home p {
+            max-width: 100%;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #eee;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #00ff99; /* Neon verde */
+            transform: scale(1.1);
+        }
+        @media (max-width: 600px) {
+            nav.navigation a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="log"><span>M</span>ery.</h2>
+        <nav class="navigation">
+            <a href="Portifolio-merry.HTML">Inicio</a>
+            <a href="curriculumvitae.HTML">Curriculum Vitae</a>
+            <a href="blog.HTML">Sobre Mim</a> 
+        </nav>
+        <a href="mailto:merychissuane@gmail.com" class="btn-talk">Fale Comigo</a>
+    </header>
+
+    <section class="home">
+        <img src="ftmery.jpg" alt="Mery Chissuane">
+        <h2>Olá a todos, <span>Mery Chissuane</span></h2>
+        <h4>Técnico de suporte informático</h4>
+        <p>Especializado nas áreas de desenvolvimento web e tecnologias como programacao e rede.</p>
+        <a href="projecto.HTML" class="btn-talk">Veja o Projeto Aqui</a>
+        <div class="social-icons">
+            <a href="https://wa.me/+258855079638"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/meryarmandochissuane"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/merychissuane"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </section>
+</body>
+</html>

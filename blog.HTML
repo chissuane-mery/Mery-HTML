@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Mery Chissuane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #eee;
+            background: #121212; /* Escuro para contraste */
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #00ff99; /* Neon verde */
+            margin: 0;
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.7);
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            width: calc(33% - 20px);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item img {
+            width: 50%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        }
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+        .bio {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .bio h2 {
+            font-size: 2em;
+            color: #00ff99; /* Neon verde */
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.7);
+        }
+        .bio p {
+            font-size: 1.1em;
+            color: #ddd;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons a {
+            color: #00ff99; /* Neon verde */
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #00cc99; /* Verde claro */
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(100% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: calc(75% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sobre Mim</h1>
+            <p>Descubra um pouco mais sobre minha jornada e veja algumas das minhas fotos.</p>
+        </header>
+
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="merry1.jpg" alt="Comuni">
+                <div class="caption">Interação na rede</div>
+            </div>
+            <div class="gallery-item">
+                <img src="MERY2.jpg" alt="Segurança cibérnetica">
+                <div class="caption">Segurança cibérnetica</div>
+            </div>
+            <div class="gallery-item">
+                <img src="MERY2.jpg" alt="Segurança cibérnetica">
+                <div class="caption">Segurança cibérnetica</div>
+            </div>
+            <div class="gallery-item">
+                <img src="MERY3.jpg" alt="Descrição da Foto 3">
+                <div class="caption">Pessoas conectadas na rede</div>
+            </div>
+            <!-- Adicione mais itens de galeria conforme necessário -->
+        </section>
+
+        <section class="bio">
+            <h2>Quem Sou Eu</h2>
+            <p>Claro! Aqui vai um resumo da minha jornada na segurança cibernética:
+
+                
+                
+                Minha jornada na segurança cibernética começou com a compreensão das redes, dados e vulnerabilidades. Aprendi que a proteção não envolve apenas tecnologia, mas também a interação humana, como a engenharia social e a educação sobre práticas seguras. A rede é um espaço dinâmico onde a colaboração com outros especialistas é crucial para enfrentar novas ameaças. A constante evolução do mundo digital requer adaptação e uma abordagem coletiva para garantir a segurança e a integridade das informações.
+                
+                
+                
+                Assim, minha missão é proteger e adaptar-se a um universo digital em constante mudança, enquanto colaboro com profissionais e educando usuários para enfrentar os desafios da segurança cibernética.</p>
+
+
+       
+        </section>
+    </div>
+</body>
+</html>

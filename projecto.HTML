@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução da Robótica - Projeto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #eee;
+            background: #121212; /* Fundo escuro para um contraste futurista */
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #00ff99; /* Neon verde */
+            margin: 0;
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.7);
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .section-title {
+            font-size: 2em;
+            color: #00ff99; /* Neon verde */
+            border-bottom: 2px solid #00ff99;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
+        }
+        .section-content {
+            font-size: 1.1em;
+            color: #ddd;
+            line-height: 1.6;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            margin-top: 20px;
+            border-left: 2px solid #00ff99; /* Neon verde */
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: #00ff99; /* Neon verde */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
+        }
+        .timeline-item h3 {
+            font-size: 1.5em;
+            color: #00cc99; /* Verde claro */
+            margin: 0 0 10px 0;
+        }
+        .timeline-item p {
+            margin: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            width: calc(33% - 20px);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        }
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #00ff99; /* Neon verde */
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            color: #ddd;
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Evolução da Robótica</h1>
+            <p>Explore os principais marcos na evolução dos robôs, desde os primeiros modelos até as tecnologias mais avançadas.</p>
+        </header>
+
+        <section class="section timeline">
+            <h2 class="section-title">Linha do Tempo</h2>
+            <div class="timeline-item">
+                <h3>Anos 1920 - Os Primeiros Robôs</h3>
+                <p>Os primeiros conceitos de robótica apareceram com a criação de dispositivos automáticos e mecânicos simples. Em 1921, o termo "robô" foi popularizado pela peça de teatro "R.U.R." de Karel Čapek.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Anos 1950 - Robôs Industriais</h3>
+                <p>A robótica industrial começou a se desenvolver com o avanço dos motores elétricos e computadores. Em 1956, George Devol e Joseph Engelberger criaram o primeiro robô industrial, chamado Unimate.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Anos 2000 - Robótica Avançada</h3>
+                <p>Com o avanço da inteligência artificial e da tecnologia de sensores, robôs modernos ganharam habilidades avançadas, incluindo navegação autônoma, reconhecimento facial e interação complexa com seres humanos.</p>
+            </div>
+        </section
